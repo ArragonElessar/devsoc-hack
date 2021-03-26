@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/design.css">
+  <meta charset="utf-8">
+  <title>Retail prototype</title>
+  <style>
+    #slider {
+      overflow: hidden;
+    }
+
+    #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+    }
+
+    #slider figure img {
+      height: 670px;
+      width: 20%;
+      float: left;
+
+    }
+
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+
+      20% {
+        left: 0;
+      }
+
+      25% {
+        left: -100%;
+      }
+
+      45% {
+        left: -100%;
+      }
+
+      50% {
+        left: -200%;
+      }
+
+      70% {
+        left: -200%;
+      }
+
+      75% {
+        left: -300%;
+      }
+
+      95% {
+        left: -300%;
+      }
+
+      100% {
+        left: -400%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bar1">
+    <ul class="bar">
+      <li class="logo"><a href="{{ url_for('site') }}"><img src="../static/images/tp2.jpg"></a></li>
+      <li class="nav"><a href="{{ url_for('site') }}">X-Retail</a></li>
+      <li>Today's Deals</li>
+      <li>
+        <form>
+          <input type="search" name="Search" size="80" id="search">
+          <label for="search">Search</label><br>
+        </form>
+      </li>
+      <li class="login2"><a href="{{ url_for('login') }}">Log In</a></li>
+      <li class="login2"><a href="{{ url_for('register') }}">Register</a></li>
+      <li>Returns and Orders</li>
+      <li class="cart"><a href="#"><img src="../static/images/w.png"></a></li>
+    </ul>
+  </div>
+
+
+  <div class="option">
+    <ul class="list">
+      <li class="scroll"><a href="#best1">Best Selling</a></li>
+      <li class="scroll"><a href="#electronics1">Electronics</a></li>
+      <li class="scroll"><a href="#clothing1">Clothing</a></li>
+      <li class="scroll"><a href="#books1">Books</a></li>
+      <li class="scroll"><a href="#home1">Home and Kitchen</a></li>
+      <li class="scroll"><a href="#game1">Games and Toys</a></li>
+      <li class="lines">
+        <marquee>Awesome Deals Today!!We have a variety of premium products!</marquee>
+      </li>
+    </ul>
+  </div>
+  <div id="slider">
+
+    <figure>
+      <img src="../static/images/watch1.jpg">
+      <img src="../static/images/3.jpg">
+      <img src="../static/images/312.jpg">
+      <img src="../static/images/wew.jpg">
+      <img src="../static/images/watch1.jpg">
+
+    </figure>
+  </div>
+
+  <section class="Best11" id="best1">
+
+    <h2> Best Selling</h2>
+    <div class="main">
+
+      <!--card7 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/daikin 1.5.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+            Daikin 1.5 Ton 3 Star Inverter Split AC (Copper, PM 2.5 Filter,2020 Model, MTKL50TV, White)
+          </p>
+          <h4>Price-Rupees 50,000 </h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+
+      </div>
+      <!--card7 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/samsung 7kg.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>Samsung 6.5 kg Fully-Automatic Top Loading Washing Machine (WA65A4002VS/TL, Imperial Silver, Center Jet
+            Technology)
+          </p>
+          <h4>Price-Rupees 17,000 </h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/note 20 ultra.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Galaxy note 20 ultra </h3>
+
+
+        </div>
+        <div class="des">
+          <p>New Note 20 Ultra 256GB-Black
+          </p>
+          <h4>Price-Rupees 1,04,999</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/galaxy s21 ultra.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Galaxy S21 Ultra </h3>
+
+
+        </div>
+        <div class="des">
+          <p>New S21 Ultra 5G 128GB-Black
+          </p>
+          <h4>Price-Rupees 1,05,999</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <section class="Electronics1" id="electronics1">
+
+    <h2>Electronics</h2><br>
+    <div class="main">
+      <!--card 1-->
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/iphone12pro.jpg">
+
+        </div>
+        <div class="title">
+          <h3>iPhone 12 pro</h3>
+
+
+        </div>
+        <div class="des">
+          <p>New Apple iPhone 12 pro 128GB-Pacific Blue
+          </p>
+          <h4>Price-Rupees 1,29,900</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card 2-->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/Apple_iPhone-11-Pro.jpg">
+
+        </div>
+        <div class="title">
+          <h3>iPhone 11 pro</h3>
+
+
+        </div>
+        <div class="des">
+          <p>New Apple iPhone 11 pro 64GB-Black
+          </p>
+          <h4>Price-Rupees 99,900</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card3 -->
+
+
+
+      <!--card4 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/apple-iphone7_big.jpg.large.jpg">
+
+        </div>
+        <div class="title">
+          <h3>iPhone 7 plus </h3>
+
+
+        </div>
+        <div class="des">
+          <p>New iPhone 7 plus 64GB-Black
+          </p>
+          <h4>Price-Rupees 37,900</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card 5-->
+
+
+      <!--card 6-->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/samsung-galaxy-fold-2-new.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Galaxy Z Fold 2 </h3>
+
+
+        </div>
+        <div class="des">
+          <p>New Galaxy Z Fold2 256GB-Rose Pink
+          </p>
+          <h4>Price-Rupees 1,49,999</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card7 -->
+
+
+
+
+      <!--card8 -->
+
+
+
+
+    </div>
+    <!--washing machines-->
+
+    <h1>Washing Machines</h1>
+    <div class="main">
+      <!--card 1-->
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/lg 6kg 5star inverter.jpg">
+
+        </div>
+        <div class="title">
+          <h3></h3>
+
+
+        </div>
+        <div class="des">
+          <p>LG 6.0 Kg 5 Star Inverter Fully-Automatic Front Loading Washing Machine (FHM1006ADW, White, Direct Drive
+            Technology)
+
+          </p>
+          <h4>Price-Rupees 29,900</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card 2-->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/ifb 6kg 5 star.jpg">
+
+        </div>
+        <div class="title">
+          <h3></h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+            IFB 6 kg 5 Star Fully-Automatic Front Loading Washing Machine (Diva Aqua SX, Silver, Inbuilt Heater, Aqua
+            Energie water softener)</p>
+
+          <h4>Price-Rupees 25,000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card3 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/panasonic 6kg.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+            Panasonic 6 Kg 5 Star Fully-Automatic Top Loading Washing Machine (NA-F60LF1HRB, Grey)
+          </p>
+          <h4>Price-Rupees 17,000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card4 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/godjeg 6kh.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>Godrej 6 Kg 5 Star Fully-Automatic Top Loading Washing Machine (WTEON 600 AD 5.0 ROGR, Grey)
+          </p>
+          <h4>Price-Rupees 16,500</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+    <!--Air Conditioners-->
+
+    <h1>Air Conditioners</h1>
+    <div class="main">
+      <!--card 1-->
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/voltas 1.5.jpg">
+
+        </div>
+        <div class="title">
+          <h3></h3>
+
+
+        </div>
+        <div class="des">
+          <p>Voltas 1.4 Ton 5 Star Inverter Adjustable Split AC (Copper, 2021 175V ADJ, White)
+
+          </p>
+          <h4>Price-Rupees 69,000 </h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/panasonic 1.5.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+            Panasonic 1.5 Ton 3 Star Wi-Fi Twin-Cool Inverter Split Air Conditioner (Copper, PM 2.5 Filter, 2021 Model,
+            CS/CU-SU18XKYTW, White)
+          </p>
+          <h4>Price-Rupees 50,000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card 2-->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/bluestar 1.5.jpg">
+
+        </div>
+        <div class="title">
+          <h3></h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+
+            Blue Star 1.5 Ton 3 Star Inverter Split AC (Copper, IC318EBTU, 2021, White)</p>
+
+          <h4>Price-Rupees 60,000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card3 -->
+
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/whrilpool 1.5.jpg">
+
+        </div>
+        <div class="title">
+          <h3> </h3>
+
+
+        </div>
+        <div class="des">
+          <p>
+
+            Whirlpool 1.5 Ton 3 Star Inverter Split Ac Copper, 1.5T Magicool Pro/Pro+ 3S Copr Inverter, White
+          </p>
+          <h4>Price-Rupees 57,000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+
+      <!--card4 -->
+
+
+
+    </div>
+
+  </section>
+  <section class="Clothing1" id="clothing1">
+
+    <h2>Fashion</h2>
+    <div class="main">
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/clothing1.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Leather Jackets</h3>
+
+
+        </div>
+        <div class="des">
+          <p>QUAT - FAUX LEATHER JACKET - OLIVE
+          </p>
+          <h4>Price-Rupees 3000</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/clothing2.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Trousers</h3>
+
+
+        </div>
+        <div class="des">
+          <p>ROLOX-5 SOLID DENIM C -TAN
+          </p>
+          <h4>Price-Rupees 2999</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/clothing3.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Dresses</h3>
+
+
+        </div>
+        <div class="des">
+          <p>REPOSE-A LINE LONG DRESS-GREEN
+          </p>
+          <h4>Price-Rupees 3149</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/clothing4.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Tops</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Casual Full Sleeve Striped Women Black Top
+          </p>
+          <h4>Price-Rupees 560</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class=" Books1" id="books1">
+
+    <h2>Books</h2>
+    <div class="main">
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/book1.jpg">
+
+        </div>
+        <div class="title">
+          <h3>The Last Resort</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Susi Holliday
+          </p>
+          <h4>Price-Rupees 499</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/book3.jpg">
+
+        </div>
+        <div class="title">
+          <h3>The Cipher: 1</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Nina Guerrera
+          </p>
+          <h4>Price-Rupees 499</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/book5.jpg">
+
+        </div>
+        <div class="title">
+          <h3>The Tatas: How a Family Built a Business and a Nation</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Girish Kuber
+          </p>
+          <h4>Price-Rupees 303</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/book6.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Modern Monopolies: What It Takes to Dominate the 21st Century Economy </h3>
+
+
+        </div>
+        <div class="des">
+          <p>Alex Moazed
+          </p>
+          <h4>Price-Rupees 349</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="Home1" id="home1">
+
+    <h2>Home and Kitchen</h2>
+    <div class="main">
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/home1.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Flower Vase</h3>
+
+
+        </div>
+        <div class="des">
+          <p>TIED RIBBONS Fabric Artificial Flowers (Standard, White)
+          </p>
+          <h4>Price-Rupees 549</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/home2.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Tables</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Furinno Sheesham Wood Writing Study Table with Chair(Natural Brown Finish)
+          </p>
+          <h4>Price-Rupees 13359</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/home3.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Dinnerware</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Larah by Borosil Green Leaves Silk Series Opalware Dinner Set, 35 Pieces, White
+          </p>
+          <h4>Price-Rupees 1802</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/home6.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Teak Wood Bed</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Solimo Betty Engineered Wood Queen Bed
+          </p>
+          <h4>Price-Rupees 11999</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="Game11" id="game1">
+    <h2>Games and Toys</h2>
+    <div class="main">
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/toy1.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Iron Man Toy</h3>
+
+
+        </div>
+        <div class="des">
+          <p>MARVEL Avengers Titan Hero Series Blast Gear Iron Man Action Figure
+          </p>
+          <h4>Price-Rupees 1998</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/toy2.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Mind Game</h3>
+
+
+        </div>
+        <div class="des">
+          <p>HS Enterprise™ Jumbo Sequenc Awesome Family Card Board Game for Kids & Adults with Playing Card and Chips
+            (Sequenc Big)
+          </p>
+          <h4>Price-Rupees 899</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/game3.jpg">
+
+        </div>
+        <div class="title">
+          <h3> A Compelling Detective Game</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Funskool Scotland Yard
+          </p>
+          <h4>Price-Rupees 345</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+      <div class="cards">
+        <div class="image">
+          <img src="../static/images/game2.jpg">
+
+        </div>
+        <div class="title">
+          <h3>Monopoly</h3>
+
+
+        </div>
+        <div class="des">
+          <p>Monopoly Game: Cheaters Edition Board Game Ages 8 and Up
+          </p>
+          <h4>Price-Rupees 2119</h4>
+          <button onclick="window.location.href='demo.html';">Buy Now</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="proper">
+    <!--<footer class="bottom">-->
+    <div class="align">
+      <ul class="bottom1">
+        <li class="social">Social</li>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+      </ul>
+      <ul class="bottom2">
+        <li class="about">About</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+        <li>Privacy Notice</li>
+        <li>Newsletter</li>
+      </ul>
+      <ul class="bottom3">
+        <li class="help">Help</li>
+        <li>FAQ</li>
+        <li>Shipments</li>
+      </ul>
+    </div>
+    <div class="query1">
+      Mail your Query
+      <form class="query" action="mailto:abc@somexxx.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="40"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    <!--</footer>-->
+  </div>
+</body>
+
+</html>

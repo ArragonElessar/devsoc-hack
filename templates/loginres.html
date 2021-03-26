@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/login2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+      $(document).ready(function(){
+            var status = "{{ data.status }}";
+            console.log(status);
+
+            if(status == 's'){
+                $("#message").html("Logged-in. Redirecting.");
+                window.setTimeout(function(){window.location="{{ url_for('site') }}";},1000)
+            }
+            else if(status == 'f'){
+                $("#message").html("Incorrect credentials. Retry");
+                window.setTimeout(function(){window.location="{{ url_for('login') }}";},1000)
+                
+            }
+      })
+  </script>
+  <title>loginres</title>
+</head>
+
+<body>
+
+  <div class="bar1">
+    <ul class="bar">
+      <li class="logo"><a href="{{ url_for('site') }}"><img src="../static/images/tp2.jpg"></a></li>
+      <li class="nav"><a href="{{ url_for('site') }}">X-Retail</a></li>
+      <li>Today's Deals</li>
+      <li>
+        <form>
+          <input type="search" name="Search" size="80" id="search">
+          <label for="search">Search</label><br>
+        </form>
+      </li>
+      <li class="login2"><a href="{{ url_for('login') }}">Log In</a></li>
+      <li class="login2"><a href="{{ url_for('register') }}">Register</a></li>
+      <li>Returns and Orders</li>
+      <li class="cart"><a href="#"><img src="../static/images/w.png"></a></li>
+    </ul>
+  </div>
+
+  <div class="titles">
+    <h3>X-Retail</h3>
+    <h3 id="message"></h3>
+  </div>
+  
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+body{
+  margin:0px;
+  font-family:"raleway", sans-serif;
+  color:#000;
+  background-color: #eee;
+  }
+  .total{
+  margin-left: 400px;
+  border:2px solid black;
+  margin-right: 330px;
+  margin-top: 40px;
+}
+.total .labels{
+  padding-left:100px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+.total .head{
+  margin-top: 15px;
+  margin-left: 230px;
+
+}
+.titles{
+  margin-left:630px;
+}
+.bar1{
+  display: flex;
+  justify-content: center;
+  padding: 1px;
+  background-color: #111;
+  color:#ccc;
+
+}
+.bar{
+  display:flex;
+
+  justify-content: center;
+  }
+  .bar li{
+    margin-right: 20px;
+    margin-left: 20px;
+    list-style: none;
+    transition: 0.2s;
+    }
+    .bar li:hover{
+      list-style: none;
+      color:white;
+      }
+      .bar li:active{
+        color:white;
+        text-decoration: underline;
+      }
+      .bar .logo img{
+        height: 22px;
+        width:22px;
+      }
+.bar .cart img{
+        width:20px;
+        height:20px;
+        }
+  .bar .cart img:hover{
+    transition: 0.5s;
+        }
+.bar .cart img:hover{
+  transform: translateY(-5px);
+}
+.bar .login2 a{
+  text-decoration: none;
+  color:#ccc;
+  transition:0.2s;
+}
+.bar .nav a{
+  text-decoration: none;
+  color: #ccc;
+}
+.bar .nav a:hover{
+  text-decoration: none;
+  color: white;
+}
+.bar .login2 a:hover{
+  color:white;
+}
+.bar .login2 a:active{
+  color:white;
+  text-decoration:underline;
+}
+ .submit a{
+   font-size: 2em;
+   margin-left: 235px;
+text-decoration: none;
+color:black;
+padding-left: 2px;
+padding-top: 1px;
+padding-right: 2px;
+padding-bottom: 1px;
+background-color: grey;
+border:1px solid black;
+transition: 0.2s;
+}
+.submit a:hover{
+  background-color: white;
+  text-decoration: underline;
+}
+@media screen and (max-width:900px)
+{
+  .bar1{
+margin-left: 2px;
+    padding: 1px;
+    background-color: #111;
+    color:#ccc;
+
+  }
+  .bar{
+     display: inline;
+     justify-content:space-around;
+    }
+    .total{
+    margin-left: 25px;
+    border:2px solid black;
+    margin-right: 49px;
+  }
+  .total .labels{
+    padding-left:30px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+  .total .head{
+    margin-top: 5px;
+    margin-left: 160px;
+
+  }
+  .submit a{
+    font-size: 2em;
+    margin-left: 160px;
+ text-decoration: none;
+ color:black;
+ padding-left: 2px;
+ padding-top: 1px;
+ padding-right: 2px;
+ padding-bottom: 1px;
+ background-color: grey;
+ border:1px solid black;
+ transition: 0.2s;
+ }
+  }
