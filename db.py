@@ -56,3 +56,4 @@ def view():
     table = cur.fetchall()
     print(table)
 
+view()
