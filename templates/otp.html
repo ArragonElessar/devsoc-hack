@@ -12,18 +12,17 @@
             console.log(status);
 
             if(status == 's'){
-                $("#message").html("An otp has been sent.");
-                $("#form").css("visibility", "visible");
-                
+                $("#message").html("Verified");
+                window.setTimeout(function(){window.location="{{ url_for('site') }}";},1000)
             }
             else if(status == 'f'){
-                $("#message").html("Email is taken. Retry");
+                $("#message").html("Invalid otp. Retry");
                 window.setTimeout(function(){window.location="{{ url_for('register') }}";},1000)
                 
             }
       })
   </script>
-  <title>verify</title>
+  <title>otp</title>
 </head>
 
 <body>
@@ -50,18 +49,6 @@
     <h3>X-Retail</h3>
     <h3 id="message"></h3>
   </div>
-  <div class="total" style="visibility: hidden;" id="form">
-    <h2 class="head">otp</h2>
-    <div class="labels" >
-        <form method="POST" action="{{ url_for('otp') }}">
-            <label for="otp">
-                <h3>OTP</h3>
-            </label><br>
-            <input type="text" name="otp" size="50"><br><br>
-
-            <h6 class="submit"><input type="submit"></h6> 
-        </form>
-    </div>
   
 </body>
 
