@@ -14,7 +14,7 @@ body{
 
 .bar1{
   display: flex;
-  justify-content:flex-start;
+  justify-content:center;
   padding: 1px;
   background-color: #111;
   color:#ccc;
@@ -22,7 +22,7 @@ body{
 }
 .bar{
   display:flex;
-  justify-content: flex-start;
+  justify-content: center;
   }
   .bar li{
     margin-right: 30px;
