@@ -10,7 +10,7 @@ def send_otp(uemail):
     mail_content = f'Generated OTP: {generated_otp}'
     # email account details for OTP Sender Account
     sender_address = "ruparelsmailer@gmail.com"
-    sender_password = 'Pranav22@@'
+    sender_password = '##Pranav22@@'
     # Setup the MIME
     message = MIMEMultipart()
     message['From'] = sender_address
