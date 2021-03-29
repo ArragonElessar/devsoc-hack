@@ -4,6 +4,8 @@ from email.mime.text import MIMEText
 from random import randint
 
 
+# function to send otp to a given email id
+
 def send_otp(uemail):
     # generate 6 digit otp
     generated_otp = randint(100000, 999999)
@@ -25,6 +27,4 @@ def send_otp(uemail):
     text = message.as_string()
     session.sendmail(sender_address, uemail, text)
     session.quit()
-    print(generated_otp)
     return generated_otp
-
